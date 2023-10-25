@@ -3,6 +3,8 @@ import App from "../App";
 import AddProducts from "../components/AddProducts/AddProducts";
 import ViewCoffee from "../components/ViewCoffee/ViewCoffee";
 import UpdateCoffee from "../components/UpdateCoffee/UpdateCoffee";
+import Login from "../components/Login/Login/Login";
+import SignUp from "../components/SignUp/SignUp";
 
 
 
@@ -30,6 +32,16 @@ export const  router = createBrowserRouter([
       path: "/update/:id",
       element: <UpdateCoffee/>,
       loader:({params})=>fetch(`http://localhost:5000/coffee/${params.id}`)
+    },
+    {
+      path: "/login",
+      element: <Login/>,
+      
+    },
+    {
+      path: "/singup",
+      element: <SignUp/>,
+      
     },
   
   ]);

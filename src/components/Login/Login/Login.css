@@ -1,0 +1,21 @@
+.teacup {
+  animation: rotateTeacup 4s linear infinite;
+}
+.login{
+    color:#523928;
+    text-shadow: 3px 3px 3px rgb(152, 147, 136);
+}
+@keyframes rotateTeacup {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  /* 0% {
+    transform: translate(-50px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(50px, 0) rotate(360deg);
+  } */
+}
